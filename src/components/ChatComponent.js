@@ -18,17 +18,16 @@ function ChatComponent() {
                 time: new Date('2021-01-14T04:24:00'),
                 likes: 1,
                 text: "Равным образом дальнейшее развитие различных форм деятельности способствует подготовке и реализации существенных финансовых условий."
-            },
-            {
-                sender: "Me",
-                time: new Date('2021-01-14T04:24:00'),
-                likes: 1,
-                text: "Равным образом дальнейшее развитие различных форм деятельности способствует подготовке и реализации существенных финансовых условий."
             }
         ]
     )
+
     function addMess(textPush)
     {
+        if(textPush.trim() === '')
+        {
+            return
+        }
         setMesseges([
             ...getMesseges, 
             {
@@ -39,10 +38,14 @@ function ChatComponent() {
         }]);
         setText("")
     }
+    function submit (e){
+        e.preventDefault()
+        addMess(getText)
+    }
     return (
         <div className="chat">
             <div className="chat-head">
-                
+
             </div>
             <div className="chat-body">
                 <ul>
@@ -57,13 +60,13 @@ function ChatComponent() {
                 </ul>
             </div>
             <div className="chat-input">
-                <form>
+                <form onSubmit={(event) => submit(event)}>
                 <input placeholder="Написать сообщение..." value={getText} onChange={e => setText(e.target.value)}/>
                 <div className="button" type='button' onClick={() => addMess(getText)}>
                         <p>Отправить</p>
                 </div>
-                <i class="ri-emotion-happy-line"></i>
-                <i class="ri-attachment-2"></i>
+                <i className="ri-emotion-happy-line" />
+                <i className="ri-attachment-2" />
                 </form>
             </div>
         </div>

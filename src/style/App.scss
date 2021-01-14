@@ -9,10 +9,10 @@
     .ri-checkbox-line {
         display: block;
         position: absolute;
-        font-size: 28px;
+        font-size: 35px;
         color: #FFFFFF;
-        top: 23px;
-        left: 33px;
+        top: 18px;
+        left: 30px;
     }
     .logo {
         text-decoration: none;
@@ -33,7 +33,7 @@
         display: block;
         position: absolute;
         top: 27px;
-        left: 212px;
+        left: 193px;
         width: 71px;
         height: 20px;
         text-align: left;
@@ -47,26 +47,22 @@
         li {
             display: inline;
             font-size: 16px;
-            margin: 0 20px 0 20px;
+            margin: 0 23px 0 20px;
         }
     }
     .second-ul {
-        //display: block;
-        //position: absolute;
-        font: normal normal 16px/20px Inter;
+        display: block;
+        position: absolute;
+        //font: normal normal 20px Inter;
+        font-size: 12px;
         top: 25px;
-        left: 1124px;
+        left: 1104px;
         width: 26px;
         height: 25px;
         li {
             display: inline;
+            margin: 0 11px 0 20px;
             font-size: 28px;
-            //margin: 0 20px 0 20px;
-            //.i{
-            //
-            //  font-size: 28px !important;
-            //
-            //}
         }
     }
 }
@@ -103,7 +99,7 @@
         .del {
             display: block;
             position: relative;
-            bottom: 1px;
+            bottom: 3px;
             left: 234px;
             width: 12px;
             height: 12px;
