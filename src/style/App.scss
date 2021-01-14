@@ -161,11 +161,27 @@
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border-bottom: #C5CDD5 1px solid;
     }
-    .chat-body {}
+    .chat-body {
+        li {
+            display: block;
+            width: 453px;
+            margin: 22px 36px 0 73px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 2px #00000029;
+            border-radius: 8px;
+            p {
+                padding: 15px;
+            }
+        }
+        .my-messeges {
+            position: relative;
+            left: 489px;
+        }
+    }
     .chat-input {
         display: block;
-        position: relative;
-        top: 648px;
+        position: absolute;
+        top: 726px;
         left: 0;
         width: 1091px;
         height: 70px;
