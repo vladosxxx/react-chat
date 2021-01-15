@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@font-face {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    -webkit-font-smoothing: antialiased;
+}
+
 //  -webkit-font-smoothing: antialiased
 .head {
     display: block;
