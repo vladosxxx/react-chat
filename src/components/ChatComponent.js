@@ -45,7 +45,11 @@ function ChatComponent() {
     return (
         <div className="chat">
             <div className="chat-head">
-
+                <div className="circle-title">ОЧ</div>
+                <div className="text-title">Общий чат</div>
+                <div className="text-subtitle">12 участников</div>
+                <i className="ri-search-line" />
+                <i className="ri-settings-4-line" />
             </div>
             <div className="chat-body">
                 <ul>
@@ -55,7 +59,7 @@ function ChatComponent() {
                             return <li className="my-messeges" key={mess.time}><p>{mess.text}</p></li>
                         }
                         else
-                            return <li key={mess.time}><p>{mess.text}</p></li>
+                            return <li key={mess.time}><div className="circle-chat">MK</div><p>{mess.text}</p></li>
                     })}
                 </ul>
             </div>

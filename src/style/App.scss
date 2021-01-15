@@ -65,6 +65,43 @@
             font-size: 28px;
         }
     }
+    .circle-head {
+        position: absolute;
+        top: -10px;
+        left: 143px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        background: #007AF4;
+        // margin-right: 8px;
+        font-size: 16px;
+        color: white;
+    }
+    .title-head {
+        position: absolute;
+        top: -9px;
+        left: 194px;
+        font-size: 14px;
+        width: 100px;
+    }
+    .subtitle-head {
+        position: absolute;
+        top: 11px;
+        left: 194px;
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .ri-arrow-down-s-line {
+        position: absolute;
+        top: 30px;
+        left: 1400px;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
 }
 
 .people {
@@ -99,7 +136,7 @@
         .del {
             display: block;
             position: relative;
-            bottom: 3px;
+            bottom: 1px;
             left: 234px;
             width: 12px;
             height: 12px;
@@ -128,13 +165,42 @@
             font-size: 20px;
         }
     }
+    .all-people {
+        ul {
+            display: block;
+            position: relative;
+            top: 8px;
+            right: 8px;
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+                .text-li {
+                    display: inline;
+                }
+                .my-circle {
+                    display: inline-block;
+                    font-size: 15px;
+                    width: 23px;
+                    height: 23px;
+                    line-height: 23px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #007AF4;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                    font-size: 11px;
+                    color: white;
+                }
+            }
+        }
+    }
     p {
         display: block;
         position: relative;
         margin: auto;
-        top: 21px;
-        left: 30px;
-        font-size: 14px;
+        top: 12px;
+        left: 35px;
+        font-size: 16px;
     }
 }
 
@@ -156,22 +222,89 @@
         height: 78px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border-bottom: #C5CDD5 1px solid;
+        .circle-title {
+            display: inline-block;
+            position: relative;
+            top: 18px;
+            left: 30px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background: #007AF4;
+            // margin-right: 8px;
+            font-size: 16px;
+            color: white;
+        }
+        .text-title {
+            display: inline-block;
+            position: relative;
+            top: 9px;
+            left: 38px;
+            font-weight: 500;
+        }
+        .text-subtitle {
+            display: block;
+            position: absolute;
+            top: 38px;
+            left: 80px;
+            font-size: 13px;
+        }
+        .ri-search-line {
+            position: absolute;
+            top: 27px;
+            left: 986px;
+            font-size: 23px;
+        }
+        .ri-settings-4-line {
+            position: absolute;
+            top: 27px;
+            left: 1038px;
+            font-size: 25px;
+        }
     }
     .chat-body {
-        li {
+        ul {
             display: block;
-            width: 453px;
-            margin: 22px 36px 0 73px;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 1px 2px #00000029;
-            border-radius: 8px;
-            p {
-                padding: 15px;
-            }
-        }
-        .my-messeges {
             position: relative;
-            left: 489px;
+            top: 0;
+            right: 0;
+            li {
+                display: block;
+                position: relative;
+                top: 35px;
+                left: 30px;
+                width: 453px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 2px #00000029;
+                border-radius: 8px;
+                .circle-chat {
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: -50px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #007AF4;
+                    font-size: 16px;
+                    color: white;
+                }
+                .time {
+                    display: block;
+                    position: relative;
+                }
+                p {
+                    padding: 15px;
+                }
+            }
+            .my-messeges {
+                position: relative;
+                left: 525px;
+            }
         }
     }
     .chat-input {
@@ -227,10 +360,9 @@
                 transform: translateY(-50%);
                 text-align: center;
                 margin: auto;
-                font-size: 14px;
+                font-size: 15px;
                 color: #FFFFFF;
             }
         }
-        // border-left: #C5CDD5 1px solid;
     }
 }

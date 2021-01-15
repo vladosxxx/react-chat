@@ -43,7 +43,7 @@ function PeopleComponent() {
                 <p>Люди</p>
                 <ul>
                     {searchResults.map((man) =>
-                        <li key={man}>{man}</li>
+                        <li key={man} title="KM"><div className="my-circle" >KM</div><div className="text-li">{man}</div></li>
                     )}
                 </ul>
 

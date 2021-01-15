@@ -23,9 +23,12 @@ function App() {
                     <i className="ri-notification-2-line"/>
                 </li>
                 <li>
-
+                <div className="circle-head">ВА</div>
+                <div className="title-head">Валерий А.</div>
+                <div className="subtitle-head">Веб-студия #VA</div>
                 </li>
             </ul>
+            <i className="ri-arrow-down-s-line"/>
         </div>
         <div className="search-block">
             <PeopleComponent />
